@@ -1,5 +1,19 @@
+import items from "./data";
+import Menu from "./Menu";
+import Categories from "./Categories";
+import { useState } from "react";
+
 function App() {
-  return <h1>This is app</h1>;
+  const [menuItems, setMenuItems] = useState(items);
+  const [categories, setCategories] = useState([]);
+  return (
+    <main>
+      <section className="menu section">
+        <h2>our menu</h2>
+        <div className="underline"></div>
+      </section>
+    </main>
+  );
 }
 
 export default App;
