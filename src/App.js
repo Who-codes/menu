@@ -9,8 +9,12 @@ function App() {
   return (
     <main>
       <section className="menu section">
-        <h2>our menu</h2>
-        <div className="underline"></div>
+        <div className="title">
+          <h2>our menu</h2>
+          <div className="underline"></div>
+        </div>
+        <Categories />
+        <Menu items={menuItems} />
       </section>
     </main>
   );
